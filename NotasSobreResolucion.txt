@@ -1,0 +1,6 @@
+el examen tiene un listado de criterios que indican como va a ser calificado, 
+el críterio de calificación es una interface que tiene un metodo calcular nota,
+cada clase que implementa la interface, define su propia forma de calcular las notas.
+
+La resolucion del examen calculara la nota, llamando al metodo calcular la nota del examen y pasandole las respuestas correctas, allí el metodo calcular nota se encargará de aplicar los diferentes críterios definidos para generar el calculo.
+las respuestas tienen un metodo que indica si la respuesta es correcta o no, este metodo llamara a la pregunta asociada a esa respuesta y usara el metodo es correcta de la pregunta, pasandose a si misma por parametro. Cada implementacion de pregunta tendra el codigo para saber si la respuesta es correcta o no.
